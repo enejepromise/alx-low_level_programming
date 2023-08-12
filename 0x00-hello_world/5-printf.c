@@ -1,7 +1,7 @@
-#include<stdio.h>
+#include <stdio.h>
 /* Main - Entry point
  *
- * return:Aways 0 (success)
+ * return 0 :Aways 0 (success)
  */
 int main(void)
 {
