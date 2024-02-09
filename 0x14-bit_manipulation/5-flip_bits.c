@@ -6,7 +6,7 @@
 * @m: second number
 * Return: number of bits to change
 */
-unsignedint flip_bits(unsigned long int n, unsigned long int m)
+unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 int a, countbit = 0;
 
