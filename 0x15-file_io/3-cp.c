@@ -25,10 +25,16 @@ char *creates_buffer(char *file)
 	return (buffer);
 }
 /**
- * close_file - Closes file descriptors.
- * @fd: The file descriptor to be closed.
+ * main - copy content of a file from one to another
+ * @argc: argument count
+ * @argv: argument vector
+ * Return: 0 success
  */
-void close_file(int fd)
+int main(int argc, char *argv[])
+	int file from, file_to, err_close;
+	ssize_t nchars, nwr;
+	char buf[1024];
+
 {
 	int c;
 
