@@ -1,9 +1,11 @@
 #include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
+#include <time.h>
 /**
- * main - Determine if a random number is positive or negative
- * Return - 0 on success
+ * main - generate random numbers to detect -ve or +ve
+ *
+ * Return: always (0)
+ *
  */
 int main(void)
 {
@@ -11,19 +13,17 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
-	if (n < 0)
+	if (n > 0)
 	{
-		printf("is negative\n");
+		printf("%d is positive\n", n);
 	}
-	else if (n > 0)
+	else if (n == 0)
 	{
-		printf("is positive\n");
+		printf("%d is zero\n", n);
 	}
-	else 
+	else
 	{
-		printf("is zero\n");
+		printf("%d is negative\n", n);
 	}
 	return (0);
 }
-
