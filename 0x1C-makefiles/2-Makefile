@@ -7,7 +7,7 @@ SRC = main.c school.c
 
 
 #object files
-OBJ = $(SRC:.C=.O)
+OBJ = $(SRC:.c=.O)
 
 
 #The name of the executable
