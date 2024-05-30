@@ -12,5 +12,8 @@ OBJ = $(SRC:.C=.O)
 
 #The name of the executable
 NAME = school
-all:{SRC} {OBJ}
-	${CC} ${SRC} ${OBJ} -o school
+all:$(NAME)
+
+#Linking files to generate the executable
+$(NAME): $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
