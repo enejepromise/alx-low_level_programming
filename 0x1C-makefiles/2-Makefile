@@ -7,13 +7,11 @@ SRC = main.c school.c
 
 
 #object files
-OBJ = $(SRC:.c=.O)
+OBJ = ${SRC:%.c=%.O}
 
 
 #The name of the executable
 NAME = school
-all:$(NAME)
-
-#Linking files to generate the executable
-$(NAME): $(OBJ)
-	$(CC) $(OBJ) -o $(NAME)
+#linking object files to generate executable
+all: ${OBJ}
+	${CC} ${OBJ} -o ${NAME}
