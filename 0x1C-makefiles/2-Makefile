@@ -1,6 +1,16 @@
+#compiler to be used 
 CC = gcc
+
+
+#files to be compiled
 SRC = main.c school.c
-OBJ = main.o school.o
+
+
+#object files
+OBJ = $(SRC:.C=.O)
+
+
+#The name of the executable
 NAME = school
 all:{SRC} {OBJ}
 	${CC} ${SRC} ${OBJ} -o school
